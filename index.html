@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/abd895e815.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- home coding -->
+    <div id="header">
+       <div class="container">
+         <nav>
+           <!-- <img src="images123/logo1111.jpg" class="logo"> -->
+           <ul id="sidemenu">
+             <li><a href="#header">Home</a> </li>
+             <li><a href="#about">About</a> </li>
+             <li><a href="#portfolio">Work</a> </li>
+             <li><a href="#contact">Contact</a> </li>
+             <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <p>web devloper</p>
+            <h1>Hi, I'm<span> Priyanshi</span> <br>From Indore</h1>
+         </div>
+       </div>
+    </div>
+    <!------------------------------------About coding-----------------------------------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images123/user.jpg" > 
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                       I am a 3rd year undergraduate student pursuing Bachelor of Computer Application from Acropolis Institute of Management Studies and Research, Indore .I always try to improve my skills.
+                       I have created a Gmail UI clone with the help of HTML and CSS. I am currently working on a project that is "Student Management System" using PHP and MySql. I like to improve my programming skills for that I do practice at HackkerRank. I have gain 5 stars at HackerRank with Java.  </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('education')">education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <table>
+                                    <tr> 
+                                        <td class="table"><li><span class="icons"><i class="fa-brands fa-java"></i></span><br>Java</li></td>
+                                        <td class="table"><li><span class="icons"><i class="fa-solid fa-c"></i></span><br>C</li></td>
+                                        <td class="table"><li><span class="icons"><i class="fa-solid fa-database"></i></span><br>database</li></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table"><li><span class="icons"><i class="fa-brands fa-html5"></i></span><br>HTML</li></td>
+                                        <td class="table"><li><span class="icons"><i class="fa-brands fa-css3-alt"></i></span><br>CSS</li></td>
+                                        <td class="table"><li><span class="icons"><i class="fa-brands fa-php"></i></span><br>PHP</li></td>
+                                    </tr>
+                                   
+                                </table>
+                               
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br>Bachelor of Computer Application form AIMSRI with aggregate score 77%</li>
+                                <li><span>2020</span><br>12th stander from Govt. H.S.S. Dakachya with 90%</li>
+                                <li><span>2018</span><br>10th stander from Govt. G.H.S. Dakachya with 93%</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------------------------portfolio-------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images123/work1.png">
+                    <div class="layer">
+                        <h3>Gmail UI Clone</h3>
+                        <p>It is a simple user interface that is created using HTML and CSS</p>
+                        <a href="#https://github.com/priyanshipatel1616/Gmail_UI_Clone"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images123/work2.png">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>It is my portfolio that is created using HTML CSS and JS</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------------------------------------Contect------------------------------------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane-top"></i> priyanshipatel1616@gmail.com</p>
+                    <p><i class="fa-solid fa-paper-plane-top"></i> 9399213038</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/priyanshipatel1212"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com/priyanshi__patel_0?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/priyanshipatel1616"><i class="fa-brands fa-square-github"></i></a>
+                        
+                    </div>
+                    <a href="images123/PriyanshiResume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <!-- <div class="contact-right">
+                    <form>
+                        <input type="text" name="NAME" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright Priyanshi</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.left = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.left = "-200px";
+        }
+
+    </script>
+</body>
+</html>
